@@ -1,0 +1,89 @@
+<DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Pesquisa de vida</h1>
+      <p id="description">Adoraríamos te conhecer um pouco mais! Compartilhe conosco algumas informações sobre sua vida, sua carreira, seus hábitos e nos ajude a construir o melhor serviço possível para você.</p>
+      <form id="survey-form">
+        <fieldset id="dados-pessoais">
+          <label id="name-label" for="name">Seu nome: <input id="name" placeholder="Digite aqui" required type="text"></label>
+          <label id="number-label" for="number">Sua idade: <input id="number" type="number" placeholder="00" required min="13" max="130"></label>
+          <label id="email-label" for="email">Seu e-mail: <input id="email" type="email" placeholder="Digite aqui" required></label>
+          <label>Seu gênero:</label>
+          <label class="genero" for="fem"><input id="fem" name="genero" type="radio" value="feminino" required>Feminino</label>
+          <label class="genero" for="masc"><input id="masc" name="genero" type="radio" value="masculino">Masculino</label>
+          <label class="genero" for="nb"><input id="nb" name="genero" type="radio" value="nao-binario">Não-binário</label>
+          <label class="genero" for="nao-responder"><input id="nao-responder" name="genero" type="radio" value="prefiro-nao-responder">Prefiro não responder</label>
+        </fieldset>
+        <fieldset id="profissional">
+          <label>Qual sua área de atuação?
+            <select id="dropdown" name="area-de-atuacao" required>
+              <option value="">(selecione)</option>
+              <option value="tecnologia">Tecnologia</option>
+              <option value="marketing">Marketing</option>
+              <option value="saude">Saúde</option>
+              <option value="educacao">Educação</option>
+              <option value="juridico">Jurídico</option>
+              <option value="arte-e-cultura">Arte e Cultura</option>
+              <option value="administrativo">Administrativo</option>
+              <option value="outro">Outro</option>
+            </select>
+          </label>
+          <label>Qual sua área de interesse?
+            <select id="interesse" name="area-de-interesse" required>
+              <option value="">(selecione)</option>
+              <option value="tecnologia">Tecnologia</option>
+              <option value="marketing">Marketing</option>
+              <option value="saude">Saúde</option>
+              <option value="educacao">Educação</option>
+              <option value="juridico">Jurídico</option>
+              <option value="arte-e-cultura">Arte e Cultura</option>
+              <option value="administrativo">Administrativo</option>
+              <option value="outro">Outro</option>
+            </select>
+          </label>
+          <label>Qual sua escolaridade?
+            <select id="escolaridade" name="escolaridade" required>
+              <option value="">(selecione)</option>
+              <option value="sem-escolaridade">Sem escolaridade</option>
+              <option value="ensino-fundamental">Ensino Fundamental</option>
+              <option value="ensino-medio">Ensino Médio</option>
+              <option value="técnico">Técnico</option>
+              <option value="ensino-superior">Ensino Superior</option>
+              <option value="pos-graduacao">Pós-Graduação</option>
+            </select>
+          </label>
+          <label for="5-anos">Onde você se vê daqui a 5 anos?<input id="5-anos" type="text" placeholder="Vivendo meu sonho de ser artista..." required></label>
+          <label>Quais redes sociais você mais usa?</label>
+          <label for="tiktok"><input id="tiktok" name="redes-sociais[]" type="checkbox" value="tiktok">Tiktok</label>
+          <label for="instagram"><input id="instagram" name="redes-sociais[]" type="checkbox" value="instagram">Instagram</label>
+          <label for="x"><input id="x" name="redes-sociais[]" type="checkbox" value="x">X</label>
+          <label for="facebook"><input id="facebook" name="redes-sociais[]" type="checkbox" value="facebook">Facebook</label>
+          <label for="youtube"><input id="youtube" name="redes-sociais[]" type="checkbox" value="youtube">Youtube</label>
+          <label for="linkedin"><input id="linkedin" name="redes-sociais[]" type="checkbox" value="linkedin">LinkedIn</label>
+          <label for="snapchat"><input id="snapchat" name="redes-sociais[]" type="checkbox" value="snapchat">Snapchat</label>
+          <label for="pinterest"><input id="pinterest" name="redes-sociais[]" type="checkbox" value="pinterest">Pinterest</label>
+          <label for="outra"><input id="outra" name="redes-sociais[]" type="checkbox" value="outra">Outra(s)</label>
+        </fieldset>
+        <fieldset id="opiniao">
+          <label>De 1 a 5, como você nos avalia?</label>
+          <label for="1" class="avaliacao"><input id="1" name="avaliacao" type="radio" value="1-estrela" required>1⭐</label>
+          <label for="2" class="avaliacao"><input id="2" name="avaliacao" type="radio" value="2-estrela">2⭐</label>
+          <label for="3" class="avaliacao"><input id="3" name="avaliacao" type="radio" value="3-estrela">3⭐</label>
+          <label for="4" class="avaliacao"><input id="4" name="avaliacao" type="radio" value="4-estrela">4⭐</label>
+          <label for="5" class="avaliacao"><input id="5" name="avaliacao" type="radio" value="5-estrela">5⭐</label>
+          <label for="opiniao-servicos">Conte-nos o que está achando de nossos serviços! (opcional)
+            <textarea id="opiniao-servicos" rows="4" cols="35"></textarea>
+          </label>
+        </fieldset>
+        <div class="botao">
+          <input id="submit" value="Enviar" type="submit" form="survey-form">
+        </div>
+      </form>
+    </body>
+  </html>
