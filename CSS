@@ -1,0 +1,115 @@
+body {
+  font-family: "Verdana", "Helvetica", sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #04de00, black);
+}
+
+h1 {
+  margin: 1em auto 0;
+  width: max-content;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 0 0.25em;
+  border-radius: 10px;
+  border: 0 solid #ffffff;
+  max-width: 100vw;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+  max-width: 700px;
+  margin: 1em auto;
+  line-height: 1.5;
+  text-align: center;
+}
+
+form {
+  width: 75%;
+  margin: 0 auto 50px;
+  box-shadow: 0 0 10px #00ffaa;
+  max-width: 720px;
+  min-width: 320px;
+  border-radius: 10px 10px 10px 10px;
+  padding-bottom: 5px;
+}
+
+fieldset {
+  border: 0 solid black;
+  border-bottom: 3px solid rgba(0, 255, 76, 0.5);
+  padding: 1rem 1rem 0.5rem;
+}
+
+input {
+  width: 100%;
+  margin: 0.5em 0;
+  height: 30px;
+  background-color: #2a2a2a32;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: unset;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.genero, .avaliacao {
+  display: inline-block;
+  width: max-content;
+  margin: 0 5px;
+}
+
+textarea {
+  display: block;
+  margin: 1em 0;
+  background-color: #2a2a2a32;
+  border: 2px solid rgba(4, 222, 0, 0.5);
+  color: white;
+}
+
+select {
+  margin: 0.5em 0;
+  background-color: #2a2a2a32;
+  border: 0 solid black;
+  border-radius: 5px;
+  height: 2em;
+  color: white;
+}
+
+option {
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #04de00;
+  margin: 20px;
+  width: 50%;
+  height: 40px;
+  padding: 0;
+  font-family: "Verdana", "Helvetica", sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(4, 222, 0, 0.5);
+}
+
+.botao {
+  text-align: center;
+}
+
+@media (max-width: 380px) {
+  h1 {
+    width: 95%;
+  }
+}
